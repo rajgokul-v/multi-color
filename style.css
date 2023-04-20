@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+     background-color: aqua;
+     min-width: 80.6rem;
+    min-height: 60px;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    margin-right: 80px;
+}
+
+nav ul li{
+    margin-left: 20px;
+    
+    height: 70px;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    padding: 10px;
+}
+
+nav ul li:hover{
+    background-color: blue;
+}
+
+
+ button{
+    opacity: 0;
+    position: relative;
+    top: -85px;
+    left: 25px;
+    height: 40px;
+    width: 150px;
+    z-index: -0.4;
+} 
+
+img:hover+button{
+  opacity: 1;
+}
+
+#img{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.social{
+    margin-left: 35rem;
+}
+
+.social i{
+    background-color: rgb(171, 209, 243);
+    margin: 10px;
+    padding: 5px;
+}
